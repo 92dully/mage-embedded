@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ESP32 LED Control</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding-top: 50px; }
+    h1 { font-size: 8vw; margin: 0 auto; }
+    #potValue { font-size: 5vw; color: #333; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>ESP32 LED Rate</h1>
+  <div id="potValue">Reading...</div>
+
+  <script>
+    function updatePotValue() {
+      fetch('/pot')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('potValue').innerText = "Potentiometer Value: " + data;
+        });
+    }
+
+    setInterval(updatePotValue, 1000); // Update every 1 second
+  </script>
+</body>
+</html>
