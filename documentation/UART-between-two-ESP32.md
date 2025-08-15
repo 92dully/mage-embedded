@@ -30,7 +30,7 @@ This project consists of two ESP32 devices communicating via UART: a **SLAVE** a
 
 Ensure both ESP32 boards are connected to power and that the antenna is attached to the MASTER board.
 
-![UART Connection](img/UARTconn.png)
+![UART Connection](images/UARTconn.png)
 
 ### UART Setup:
 - Connect **GND (MASTER)** to **GND (SLAVE)**  
@@ -52,7 +52,7 @@ The MASTER board is now ready. Follow the remaining setup instructions for the S
 ### HS420561K-32 Display Setup:
 Refer to the following pinout diagram (top left to right is 12–7; bottom left to right is 1–6):
 
-![Display Pinout Setup](img/display-pinout.png)
+![Display Pinout Setup](images/display-pinout.png)
 
 Before connecting, ensure that **display pins 12, 9, 8, and 6** each have a 330Ω resistor connected in series.
 
@@ -141,7 +141,7 @@ To use the project, follow these steps:
    - **Password** = `"th3dully"`
 4. Go to `http://192.168.1.22` on your web browser.
 
-<img src="img/led-rate.png" alt="LED Rate image" width="50%">
+<img src="images/led-rate.png" alt="LED Rate image" width="50%">
 
 ## Common Problems
 
